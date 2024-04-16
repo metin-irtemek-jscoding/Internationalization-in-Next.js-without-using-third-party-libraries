@@ -8,7 +8,7 @@ export default function page({
 }: {
   params: { lang: Locale };
 }) {
-  const t = getTranslate(lang);
+  const t = getTranslate();
   return (
     <div className="flex min-h-screen flex-col items-center justify-between p-24">
       <div className="border border-slate-600">

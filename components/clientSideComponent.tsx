@@ -1,10 +1,9 @@
 "use client";
 import React from "react";
 
-import { getTranslate, getLang } from "@/lang/clientSide";
+import { getTranslate } from "@/lang/clientSide";
 
 export default function ClientSideComponent() {
-  const lang = getLang();
-  const t = getTranslate(lang);
+  const t = getTranslate();
   return <div className="p-6">{t["This component works client side"]}</div>;
 }

@@ -7,7 +7,7 @@ export default function Home({
 }: {
   params: { lang: Locale };
 }) {
-  const t = getTranslate(lang);
+  const t = getTranslate();
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <div>{t["Welcome"]}</div>

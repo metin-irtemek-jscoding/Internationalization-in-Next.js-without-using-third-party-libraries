@@ -16,4 +16,4 @@ export const getLang = () => {
   return lang;
 };
 
-export const getTranslate = (lang: Locale) => dictionaries[lang];
+export const getTranslate = () => dictionaries[getLang()];
